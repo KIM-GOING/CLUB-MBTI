@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="question.css" />
+    <script defer src="MBTI.js"></script>
     <title>소모임 MBTI 테스트</title>
 </head>
 
@@ -12,13 +13,13 @@
     <div class="wrapper">
         <section class="section"></section>
         <section class="content">
-            <div class="q-num">Q1</div>
-            <div class="q-content">새 학기가 시작되고 소모임 신청 기간이 찾아왔다!</div>
+            <div id="question-num" class="q-num">Q1</div>
+            <div id="question" class="q-content">새 학기가 시작되고 소모임 신청 기간이 찾아왔다!</div>
             <div class="q-answer">
-                <a href="#" class="q-answer-btn">소모임… 좀 귀찮지만 그래도 안 할 순 없으니 장사랑산악회만 해야겠다!</a>
+                <a href="#" id="question-btn1" class="q-answer-btn" onclick="btn_click()">소모임… 좀 귀찮지만 그래도 안 할 순 없으니 장사랑산악회만 해야겠다!</a>
             </div>
             <div class="q-answer">
-                <a href="#" class="q-answer-btn">흠… 이번 학기엔 장사랑산악회까지 4개의 소모임에 등록해야겠다!</a>
+                <a href="#" id="question-btn2" class="q-answer-btn" onclick="btn_click()">흠… 이번 학기엔 장사랑산악회까지 4개의 소모임에 등록해야겠다!</a>
             </div>
         </section>
         <section class="section"></section>

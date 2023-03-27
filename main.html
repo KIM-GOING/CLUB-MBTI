@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
+    <script defer src="MBTI.js"></script>
     <title>소모임 MBTI 테스트</title>
 </head>
 
@@ -25,10 +26,12 @@
             </div>
             <div class="personal-name">
                 <div class="name-title">이름을 적어주세요</div>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" />
             </div>
             <div class="test-start">
-                <a href="question.html" class="test-start-btn">테스트 시작하기</a>
+                <a href="question.html"
+                    class="test-start-btn"
+                    onclick="name_submit()">테스트 시작하기</a>
             </div>
         </section>
         <section class="section"></section>
