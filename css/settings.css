@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the header */
+header {
+  background-color: #4caf50; /* Light green */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Style the main content area */
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  flex: 1;
+}
+
+/* Style the form elements */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50; /* Light green */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#imgqr img {
+  max-width: 320px;
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffc107; /* Yellow */
+  color: #333;
+}
+
+/* Apply media queries for smaller screens */
+@media (max-width: 480px) {
+  main {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/settings.css" />
+    <script src="../js/settings.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a23c4723e7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="#">
+        <i id="go-main" class="fa-solid fa-house"></i>
+      </a>
+      <h1>Settings</h1>
+    </header>
+    <main>
+      <form>
+        <label for="username">자주 쓰는 이름 :</label>
+        <input type="text" id="username" name="username" />
+        <br />
+        <label for="bgm">BGM : (추후 서비스 예정)</label>
+        <input type="checkbox" id="bgm" name="bgm" />
+        <br />
+        <button type="submit">Save</button>
+        <br />
+      </form>
+      <label for="coffee">개발자에게 커피 한 잔 :</label>
+      <select onchange="changeValue(this)">
+        <option value="null">안 사요</option>
+        <option value="papercup">자판기 커피</option>
+        <option value="starbucks">스타벅스 아메리카노 T</option>
+        <option value="giftcard">1만원 금액권</option>
+      </select>
+      <div id="imgqr">
+        <img id="papercup" src="../img/papercup-img.JPG" alt="papercup" />
+        <img id="starbucks" src="../img/starbucks-img.JPG" alt="starbucks" />
+        <img id="giftcard" src="../img/giftcard-img.JPG" alt="giftcard" />
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Club MBTI Test</p>
+    </footer>
+  </body>
+</html>
