@@ -4,6 +4,8 @@ var count = 0;
 function name_submit() {
     var n = document.getElementById("name").value;
     name = n;
+
+    console.log(name);
 }
 
 function hreflink() {
@@ -55,6 +57,8 @@ function btn_click() {
         document.getElementById("question").innerHTML = "결과가 궁금하나요?!";
         document.getElementsByClassName("q-answer-btn")[0].style.visibility = "hidden";
         document.getElementById("question-btn2").innerHTML = "결과 보러 가기";
+        console.log(name);
+
         count = count + 1;
     }
     else if(count == 12) {
@@ -65,30 +69,13 @@ function btn_click() {
         document.getElementById("question").innerHTML = question[count+1];
         document.getElementById("question-btn1").innerHTML = btn1[count+1];
         document.getElementById("question-btn2").innerHTML = btn2[count+1];
+        console.log(name);
 
         count = count + 1;
     }
 }
 
-function q_num() {
-    var qn = ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10", "Q11", "Q12"];
-    document.getElementById("question-num").innerHTML = qn[count+1];
-    count = count + 1;
-}
-
-function q_content() {
-    var question = ["새 학기가 시작되고 소모임 신청 기간이 찾아왔다!",
-                    "등산 하느라 고생 많으셨어요~ 이제 회식하러 가요!",
-                    "기다리고 기다렸던 산악회 MT를 왔다. 장기자랑 하실 분~?",
-                    "오늘은 산악회에서 나물비빔밥 해 먹기로 한 날! 내가 담당한 건 콩나물 무치기.",
-                    "‘산악회’하면 떠오르는 생각은?",
-                    "오늘 처음으로 등산을 함께 한 선배가 정상에서 뉴진스의 하입보이를 춘다. 당신의 생각은?",
-                    "다 같이 등산 가기로 한 날 친구한테 “나 오늘 컨디션이 안 좋아서 등산 같이 못 갈 것 같아ㅠㅠ 다른 사람들한테 좀 전해줘…” 라는 카톡이 왔다. 나의 대답은?",
-                    "제가 산악회에 들어온 이유는…",
-                    "아침에 등산 가기로 한 날 친구가 뛰어오면서 “어제 너무 늦게 자서 늦게 일어났어. 씻지도 못하고 드라이 샴푸로 대충 머리 정리하고 나옴 ㅋㅋ” 이라고 말한다. 나의 대답은?",
-                    "등산 코스를 짜려고 하는 상황",
-                    "등산 가기 위해 가방을 챙겨보자!",
-                    "오늘은 기다리고 기다렸던 첫 등산! 무슨 옷 입을까?"];
-    document.getElementById("question-num").innerHTML = question[count+1];
-    count = count + 1;
+function name_show() {
+    document.getElementById("namesh").innerHTML=name;
+    console.log(name);
 }
