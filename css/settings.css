@@ -69,20 +69,12 @@ button {
 button:hover {
   background-color: #3e8e41;
 }
-#img-qr {
-  text-align: center;
-}
 
-#img-qr img {
-  max-width: 240px;
+#imgqr img {
+  max-width: 320px;
   display: none;
 }
 
-#img-qr img.active {
-  display: block;
-}
-
-/* Style the footer */
 footer {
   text-align: center;
   padding: 10px;

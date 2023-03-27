@@ -24,20 +24,20 @@
         <label for="username">자주 쓰는 이름 :</label>
         <input type="text" id="username" name="username" />
         <br />
-        <label for="bgm">BGM :</label>
+        <label for="bgm">BGM : (추후 서비스 예정)</label>
         <input type="checkbox" id="bgm" name="bgm" />
         <br />
         <button type="submit">Save</button>
         <br />
       </form>
       <label for="coffee">개발자에게 커피 한 잔 :</label>
-      <select id="coffee" name="coffee">
+      <select onchange="changeValue(this)">
         <option value="null">안 사요</option>
         <option value="papercup">자판기 커피</option>
         <option value="starbucks">스타벅스 아메리카노 T</option>
         <option value="giftcard">1만원 금액권</option>
       </select>
-      <div id="img-qr">
+      <div id="imgqr">
         <img id="papercup" src="../img/papercup-img.JPG" alt="papercup" />
         <img id="starbucks" src="../img/starbucks-img.JPG" alt="starbucks" />
         <img id="giftcard" src="../img/giftcard-img.JPG" alt="giftcard" />

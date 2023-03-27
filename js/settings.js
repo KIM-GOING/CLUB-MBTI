@@ -1,21 +1,16 @@
-// JavaScript code
-const mySelect = document.getElementById("coffee");
-const imageContainer = document.getElementById("img-qr");
+const changeValue = (target) => {
+  const imgTags = document.getElementsByTagName("img");
+  const numImgTags = imgTags.length;
+  // console.log(imgTags[1]);
 
-const selectedValue = mySelect.value;
-
-mySelect.addEventListener("change", function () {
-  const selectedValue = mySelect.value;
-  console.log(selectedValue);
-  const selectedImage = document.getElementById(selectedValue);
-  console.log(selectedImage);
-
-  const images = imageContainer.getElementsByTagName("img");
-  for (let i = 0; i < images.length; i++) {
-    if (images[i].id === selectedValue) {
-      images[i].style.display = "block";
+  const selectedValue = target.value;
+  // console.log(selectedValue);
+  let i;
+  for (i = 0; i < numImgTags; i++) {
+    if (imgTags[i].id === selectedValue) {
+      imgTags[i].style.display = "block";
     } else {
-      images[i].style.display = "none";
+      imgTags[i].style.display = "none";
     }
   }
-});
+};
