@@ -1,19 +1,19 @@
 /*폰트 설정: 나눔스퀘어라운드 EB, B, R, L*/
 @font-face {
     font-family: 'nnsqr-eb';
-    src: url(main/NanumSquareRoundOTFEB.otf);
+    src: url(../img/main/NanumSquareRoundOTFEB.otf);
 }
 @font-face {
     font-family: 'nnsqr-b';
-    src: url(main/NanumSquareRoundOTFB.otf);
+    src: url(../img/main/NanumSquareRoundOTFB.otf);
 }
 @font-face {
     font-family: 'nnsqr-r';
-    src: url(main/NanumSquareRoundOTFR.otf);
+    src: url(../img/main/NanumSquareRoundOTFR.otf);
 }
 @font-face {
     font-family: 'nnsqr-l';
-    src: url(main/NanumSquareRoundOTFL.otf);
+    src: url(../img/main/NanumSquareRoundOTFL.otf);
 }
 
 /*태그 설정*/
