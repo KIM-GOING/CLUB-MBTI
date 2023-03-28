@@ -62,7 +62,9 @@ function btn_click() {
         count = count + 1;
     }
     else if(count == 12) {
-        window.location.href="result.html";
+        document.getElementsByClassName("content")[0].style.display = 'none';
+        document.getElementsByClassName("result-site")[0].style.display = 'flex';
+        document.getElementById("namesh").innerHTML = name;
     }
     else {
         document.getElementById("question-num").innerHTML = qn[count+1];
@@ -73,9 +75,4 @@ function btn_click() {
 
         count = count + 1;
     }
-}
-
-function name_show() {
-    document.getElementById("namesh").innerHTML=name;
-    console.log(name);
 }
