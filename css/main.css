@@ -54,13 +54,13 @@ input[type="checkbox"]:checked + label div {
 }
 
 input[type="text"] {
-    width: 250px;
-    height: 60px;
+    width: 35vh;
+    height: 7vh;
 
     border: 1px solid #dddddd;
 
     font-family: 'nnsqr-r';
-    font-size: 40px;
+    font-size: 5vh;
     text-align: center;
 
     display: flex;
@@ -87,7 +87,7 @@ input[type="text"] {
     padding-right: 20px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -99,9 +99,9 @@ input[type="text"] {
     align-items: center;
 
     font-family: 'nnsqr-eb';
-    font-size: 300%;
+    font-size: 6vh;
     text-align: center;
-    line-height: 65px;
+    line-height: 7.5vh;
     max-height: 45%;
 }
 
@@ -136,7 +136,7 @@ input[type="text"] {
     padding-bottom: 10px;
 
     font-family: 'nnsqr-b';
-    font-size: 150%;
+    font-size: 3vh;
 }
 
 .test-start {
@@ -147,21 +147,50 @@ input[type="text"] {
 }
 
 .test-start-btn {
-    width: 350px;
-    height: 60%;
+    width: 43vh;
+    height: 9vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-family: 'nnsqr-eb';
-    font-size: 50px;
+    font-size: 6vh;
     text-align: center;
     text-decoration: none;
     color: black;
     border: 3px solid #8cbb6d;
     border-radius: 10px;
     background-color: white;
+}
+
+.setting {
+    height: 10%;
+    max-height: 90%;
+
+    display: flex;
+    align-items: center;
+}
+
+.insta-img {
+    height: 6vh;
+
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+}
+
+.github-img {
+    height: 6vh;
+
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+}
+
+.setting-img {
+    height: 6vh;
+
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
 }
 
 /* PC (해상도 1024px)*/ 

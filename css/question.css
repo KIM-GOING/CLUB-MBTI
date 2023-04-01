@@ -68,7 +68,7 @@ body {
 
     text-align: center;
     font-family: 'nnsqr-eb';
-    font-size: 6vh;
+    font-size: 5vh;
 }
 
 .q-answer {
@@ -79,7 +79,7 @@ body {
 }
 
 .q-answer-btn {
-    width: 350px;
+    width: 45vh;
     height: 75%;
 
     display: flex;
@@ -120,16 +120,21 @@ body {
     text-align: center;
 
     font-family: 'nnsqr-eb';
-    font-size: 3.5vh;
+    font-size: 4vh;
 }
 
 .result-img {
     flex: 2.15;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     overflow: hidden;
 }
 
 .imgs {
+    height: 21vh;
     max-height: 100%;
 }
 
@@ -145,14 +150,34 @@ body {
     font-size: 3.5vh;
 }
 
+#object {
+    color: rgb(43, 158, 39);
+}
+
 .result-explain {
     flex: 2;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     font-family: 'nnsqr-l';
-    font-size: 2vh;
+    font-size: 2.5vh;
+}
+
+.mbti-explain {
+    text-align: center;
+    font-family: 'nnsqr-b';
+    padding-bottom: 1vh;
+}
+
+.mbti {
+    color: rgb(226, 96, 96);
+}
+
+.mbti-comment {
+    font-size: 2.2vh;
+    text-align: center;
 }
 
 .btn {

@@ -1,6 +1,17 @@
 var name;
 var count = 0;
 
+var e = 0;
+var i = 0;
+var n = 0;
+var s = 0;
+var t = 0;
+var f = 0;
+var p = 0;
+var j = 0;
+
+var mbti = "";
+
 function name_submit() {
     var n = document.getElementById("name").value;
     name = n;
@@ -51,13 +62,44 @@ function btn_click() {
                 "분 단위로 플랜 B까지 생각해본다.",
                 "왼쪽 상단 주머니에는 물티슈, 사이드 주머니에는 물병, 혹시 모르니 여분 양말…etc.",
                 "어제 골라둔 옷을 입는다."];
+    var comment = ["ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다."]
 
     if(count == 11) {
+        if(event.target.id == "question-btn1") {
+            p = p + 1;
+            console.log("p");
+        }
+        else {
+            j = j + 1;
+            console.log("j");
+        }
+
         document.getElementById("question-num").innerHTML = "";
         document.getElementById("question").innerHTML = "결과가 궁금하나요?!";
         document.getElementsByClassName("q-answer-btn")[0].style.visibility = "hidden";
         document.getElementById("question-btn2").innerHTML = "결과 보러 가기";
-        console.log(name);
+
+        if(e > i) {
+            mbti = mbti + "e";
+        } else {
+            mbti = mbti + "i";
+        }
+        if(n > s) {
+            mbti = mbti + "n";
+        } else {
+            mbti = mbti + "s";
+        }
+        if(t > f) {
+            mbti = mbti + "t";
+        } else {
+            mbti = mbti + "f";
+        }
+        if(p > j) {
+            mbti = mbti + "p";
+        } else {
+            mbti = mbti + "j";
+        }
+        console.log(mbti);
 
         count = count + 1;
     }
@@ -65,13 +107,56 @@ function btn_click() {
         document.getElementsByClassName("content")[0].style.display = 'none';
         document.getElementsByClassName("result-site")[0].style.display = 'flex';
         document.getElementById("namesh").innerHTML = name;
+        document.getElementsByClassName("mbti")[0].innerHTML = mbti;
+
+        if(mbti == "entp") {
+            document.getElementsByClassName("mbti-comment")[0].innerHTML = comment[0];
+        }
+
     }
     else {
         document.getElementById("question-num").innerHTML = qn[count+1];
         document.getElementById("question").innerHTML = question[count+1];
         document.getElementById("question-btn1").innerHTML = btn1[count+1];
         document.getElementById("question-btn2").innerHTML = btn2[count+1];
-        console.log(name);
+
+        if(count < 3) {
+            if(event.target.id == "question-btn1") {
+                e = e + 1;
+                console.log("e");
+            }
+            else {
+                i = i + 1;
+                console.log("i");
+            }
+        } else if(count < 6) {
+            if(event.target.id == "question-btn1") {
+                n = n + 1;
+                console.log("n");
+            }
+            else {
+                s = s + 1;
+                console.log("s");
+            }
+        } else if(count < 9) {
+            if(event.target.id == "question-btn1") {
+                t = t + 1;
+                console.log("t");
+            }
+            else {
+                f = f + 1;
+                console.log("f");
+            }
+        } else {
+            if(event.target.id == "question-btn1") {
+                p = p + 1;
+                console.log("p");
+            }
+            else {
+                j = j + 1;
+                console.log("j");
+            }
+        }
 
         count = count + 1;
     }
