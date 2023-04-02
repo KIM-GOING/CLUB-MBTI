@@ -29,7 +29,7 @@ function btn_click() {
                     ["ns", "오늘 처음으로 등산을 함께 한 선배가 정상에서 뉴진스의 하입보이를 춘다. 당신의 생각은?"],
                     ["tf", "친구한테 “나 오늘 컨디션이 안 좋아서 등산 같이 못 갈 것 같아ㅠㅠ 다른 사람들한테 좀 전해줘…” 라는 카톡이 왔다. 나의 대답은?"],
                     ["ei", "등산 하느라 고생 많으셨어요~ 이제 회식하러 가요!"],
-                    ["tf", "아침에 등산 가기로 한 날 친구가 뛰어오면서 “어제 너무 늦게 자서 늦게 일어났어. 씻지도 못하고 드라이 샴푸로 대충 머리 정리하고 나옴 ㅋㅋ” 이라고 말한다. 나의 대답은?"],
+                    ["tf", "집결지에 도착한 친구가 “어제 너무 늦게 자서 지금 씻지도 못하고 드라이 샴푸로 대충 머리 정리하고 나옴 ㅋㅋ” 이라고 말한다. 나의 대답은?"],
                     ["pj", "등산 코스를 짜려고 하는 상황"],
                     ["ns", "‘산악회’하면 떠오르는 생각은?"],
                     ["ei", "기다리고 기다렸던 산악회 MT를 왔다. 장기자랑 하실 분~?"],
@@ -64,7 +64,7 @@ function btn_click() {
                 ["j", "어제 골라둔 옷을 입는다."]
                ];
     var comment = [
-                    ["ENTP", "ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다. ENTP에 대한 설명입니다."],
+                    ["ENTP", "장사랑산악회의 장우영 회장님과 같은 특성을 가지고 있는 당신! 장사랑산악회에서 당당히 장회장의 역할을 수행하고 있다고 보아도 무관하겠군요! 장회장님과 같이 앞으로도 우리 장사랑산악회에 많은 관심과 사랑 부탁드립니다~", "장회장", "../img/result/water-bottle.png"],
                     ["ISTJ", "ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다. ISTJ에 대한 설명입니다."],
                     ["ISFJ", "ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다. ISFJ에 대한 설명입니다."],
                     ["ESTJ", "ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다. ESTJ에 대한 설명입니다."],
@@ -146,6 +146,8 @@ function btn_click() {
         var q;
         for(q = 0; q < 16; q++) {
             if(mbti == comment[q][0]) {
+                document.getElementsByClassName("imgs")[0].src = comment[q][3];
+                document.getElementById("object").innerHTML = comment[q][2];
                 document.getElementsByClassName("mbti-comment")[0].innerHTML = comment[q][1];
             }
         }
