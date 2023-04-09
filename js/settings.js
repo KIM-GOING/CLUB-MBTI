@@ -1,3 +1,8 @@
+function nameSubmit() {
+  const username = document.getElementById("username").value;
+  console.log(username);
+}
+
 const changeValue = (target) => {
   const imgTags = document.getElementsByTagName("img");
   const numImgTags = imgTags.length;
